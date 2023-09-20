@@ -3,12 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "codegen": "npx playwright codegen https://www.planity.com/la-belle-boucle-studio-lyon-69001/reservation"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.38.0",
-    "@types/node": "^20.6.2"
+    "@types/node": "^20.6.2",
+    "@types/nodemailer": "^6.4.10",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.5"
   }
 }
