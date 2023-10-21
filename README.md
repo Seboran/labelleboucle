@@ -9,3 +9,12 @@ Le projet utilise playwright qui simule un utilisateur qui consulte le site de p
 Pour configurer l'adresse email, il faut avoir un serveur capable d'envoyer des emails et renseigner ces informations dans le code.
 
 Pour démarrer automatiquement l'application, le plus simple est de mettre en place un cronjob.
+
+## Développement local
+
+```bash
+pnpm i
+pnpm test
+```
+
+Si la commande plante, c'est peut-être parce que playwright n'est pas installé ou à jour. Bien regarder la console pour cela
